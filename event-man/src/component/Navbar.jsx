@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Group from "../assets/images/Group 1.png";
+import Photo from "../assets/images/Photo.png"
 
 const Navbar = ({ homeRef, aboutRef, contactRef }) => {
   const [loginOpen, setLoginOpen] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = ({ homeRef, aboutRef, contactRef }) => {
           </button>
           <div className="avatar">
             <div className="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
-              <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="avatar" />
+              <img src={Photo} alt="avatar" />
             </div>
           </div>
         </div>

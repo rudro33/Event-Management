@@ -1,15 +1,12 @@
+
+
+
 import React from "react";
 
 const Login = ({ onClose }) => {
   return (
     <div className="hero bg-base-200 min-h-screen relative">
-      {/* Close Button */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 bg-red-200 text-red-600 font-semibold px-4 py-2 rounded-lg hover:bg-red-300 transition"
-      >
-        ✕ Close
-      </button>
+      <button onClick={onClose} className="absolute top-4 right-4 bg-red-200 text-red-600 font-semibold px-4 py-2 rounded-lg hover:bg-red-300 transition">✕ Close</button>
 
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">

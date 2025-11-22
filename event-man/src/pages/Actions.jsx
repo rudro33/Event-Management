@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import Video from "../assets/images/Video.mp4"
+import Video from "../assets/images/Video.mp4";
 import SampleImage from "../assets/images/Rectangle 77.png";
 
 const Actions = () => {
@@ -27,7 +28,7 @@ const Actions = () => {
 
             <button
               onClick={() => setShowDetails(true)}
-              className="bg-purple-600 mt-4 text-white px-4 py-3 rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition"
+              className="bg-purple-600/80 mt-4 text-white px-4 py-3 rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition"
             >
               Read More
             </button>

@@ -1,12 +1,14 @@
-import { useRef, useState } from 'react';
-import Navbar from './component/Navbar';
-import Hero from './pages/Hero';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Prebook from './pages/Prebook';
-import SingleEvent from './pages/SingleEvent';
-import Actions from './pages/Actions';
-import Footer from './pages/Footer';
+
+// export default App;
+import { useRef, useState } from "react";
+import Navbar from "./component/Navbar";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Prebook from "./pages/Prebook";
+import SingleEvent from "./pages/SingleEvent";
+import Actions from "./pages/Actions";
+import Footer from "./pages/Footer";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -25,7 +27,7 @@ const App = () => {
         aboutRef={aboutRef}
         contactRef={contactRef}
         prebookRef={prebookRef}
-        videoRef ={videoRef}
+        videoRef={videoRef}
         footerRef={footerRef}
       />
 
@@ -33,12 +35,12 @@ const App = () => {
       <Prebook ref={prebookRef} onViewDetails={(event) => setSelectedEvent(event)} />
       {selectedEvent && <SingleEvent event={selectedEvent} onBack={() => setSelectedEvent(null)} />}
       <About ref={aboutRef} />
-      <Actions ref={videoRef}/>
+      <Actions ref={videoRef} />
       <Contact ref={contactRef} />
-      <Footer ref={footerRef}/>
-      
+      <Footer ref={footerRef} />
     </div>
   );
 };
 
 export default App;
+

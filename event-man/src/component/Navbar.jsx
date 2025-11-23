@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Group from "../assets/images/Group 1.png";
-import Photo from "../assets/images/Photo.png"
+import Photo from "../assets/images/Photo.png";
 
-const Navbar = ({ homeRef, aboutRef, contactRef }) => {
+const Navbar = ({ homeRef, aboutRef, contactRef, prebookRef, videoRef, sponsorRef }) => {
   const [loginOpen, setLoginOpen] = useState(false);
 
   const scrollTo = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -21,15 +23,14 @@ const Navbar = ({ homeRef, aboutRef, contactRef }) => {
         {/* Menu */}
         <ul className="hidden md:flex gap-8 font-medium">
           <li onClick={() => scrollTo(homeRef)} className="hover:text-yellow-400 cursor-pointer">Home</li>
-          <li onClick={() => scrollTo(prebookRef)} className="hover:text-yellow-400 cursor-pointer">Prebook</li> 
+          <li onClick={() => scrollTo(prebookRef)} className="hover:text-yellow-400 cursor-pointer">Prebook</li>
           <li onClick={() => scrollTo(aboutRef)} className="hover:text-yellow-400 cursor-pointer">About</li>
-          <li onClick={() => scrollTo(videoRef)} className="hover:text-yellow-400 cursor-pointer">Video</li> 
+          <li onClick={() => scrollTo(videoRef)} className="hover:text-yellow-400 cursor-pointer">Video</li>
+          <li onClick={() => scrollTo(sponsorRef)} className="hover:text-yellow-400 cursor-pointer">Sponsor</li>
           <li onClick={() => scrollTo(contactRef)} className="hover:text-yellow-400 cursor-pointer">Contact</li>
-          <li onClick={() => scrollTo(footerRef)} className="hover:text-yellow-400 cursor-pointer">Footer</li>
         </ul>
-        
 
-        {/* Login Button + Avatar */}
+        {/* Login */}
         <div className="flex items-center gap-4">
           <button
             onClick={() => setLoginOpen(true)}

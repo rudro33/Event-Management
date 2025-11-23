@@ -3,7 +3,7 @@ import Event1 from "../assets/images/first.jpg";
 import Event2 from "../assets/images/sec.jpg";
 
 const events = [
-  { id: 1, name: "Concert Night", venue: "National IT Hall", image: Event1, rating: 4.5 },
+  { id: 1, name: "Rafi Alam's ", venue: "National IT Hall", image: Event1, rating: 4.5 },
   { id: 2, name: "Tech Gala", venue: "Grand Arena", image: Event2, rating: 4.0 },
 ];
 

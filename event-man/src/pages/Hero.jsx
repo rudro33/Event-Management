@@ -9,10 +9,10 @@ const Hero = forwardRef((props, ref) => {
   const ticketPrice = 120;
 
   const schedules = [
-    { id: 1, time: "10:00 AM", event: "Opening Ceremony", speaker: "John Doe" },
-    { id: 2, time: "11:30 AM", event: "AI & Future Talk", speaker: "Dr. Alice Smith" },
-    { id: 3, time: "2:00 PM", event: "Networking Session", speaker: "Industry Experts" },
-    { id: 4, time: "4:00 PM", event: "Product Showcase", speaker: "Tech Teams" },
+    { id: 1, time: "10:00 AM", event: "Opening Ceremony", speaker: "Khairul Dewan" },
+    { id: 2, time: "11:30 AM", event: "Future Talk", speaker: "Joy Paul" },
+    { id: 3, time: "2:00 PM", event: " AvoidRafa", speaker: "Rafi Alam's" },
+    { id: 4, time: "4:00 PM", event: "Bagdara", speaker: "Rafa" },
   ];
 
   // Ticket page
@@ -22,7 +22,6 @@ const Hero = forwardRef((props, ref) => {
         <h2 className="text-3xl md:text-4xl font-bold text-purple-400 mb-6 text-center">Buy Your Ticket 🎟️</h2>
         <div className="bg-[#151320] w-full max-w-md rounded-2xl shadow-[0_0_30px_rgba(147,51,234,0.6)] p-6 sm:p-8">
           <h3 className="text-xl font-semibold mb-2">Tech Innovation Event 2025</h3>
-          <p className="text-gray-400 mb-4">15–17 December • National IT Hall</p>
           <div className="flex justify-between items-center mb-6">
             <span className="text-lg">Price per Ticket:</span>
             <span className="font-bold text-yellow-400">${ticketPrice}</span>

@@ -22,7 +22,7 @@ const Footer = () => {
       </nav>
 
       <aside>
-        <p>Copyright © {new Date().getFullYear()} - All rights reserved by ACME Industries Ltd</p>
+        <p>Copyright © {new Date().getFullYear()} - All rights reserved by Tech Event Industries Ltd</p>
       </aside>
     </footer>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Group from "../assets/images/Group 1.png";
 import Photo from "../assets/images/Photo.png";
 
-const Navbar = ({ homeRef, aboutRef, contactRef, prebookRef, videoRef, sponsorRef }) => {
+const Navbar = ({ homeRef, aboutRef, contactRef, prebookRef, actionsRef, sponsorRef }) => {
   const [loginOpen, setLoginOpen] = useState(false);
 
   const scrollTo = (ref) => {
@@ -25,7 +25,7 @@ const Navbar = ({ homeRef, aboutRef, contactRef, prebookRef, videoRef, sponsorRe
           <li onClick={() => scrollTo(homeRef)} className="hover:text-yellow-400 cursor-pointer">Home</li>
           <li onClick={() => scrollTo(prebookRef)} className="hover:text-yellow-400 cursor-pointer">Prebook</li>
           <li onClick={() => scrollTo(aboutRef)} className="hover:text-yellow-400 cursor-pointer">About</li>
-          <li onClick={() => scrollTo(videoRef)} className="hover:text-yellow-400 cursor-pointer">Video</li>
+          <li onClick={() => scrollTo(actionsRef)} className="hover:text-yellow-400 cursor-pointer">Actions</li>
           <li onClick={() => scrollTo(sponsorRef)} className="hover:text-yellow-400 cursor-pointer">Sponsor</li>
           <li onClick={() => scrollTo(contactRef)} className="hover:text-yellow-400 cursor-pointer">Contact</li>
         </ul>

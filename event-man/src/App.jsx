@@ -8,7 +8,7 @@ import SingleEvent from "./pages/SingleEvent";
 import Actions from "./pages/Actions";
 import Sponsors from "./pages/SponsorsSwiper";
 import { Toaster } from "react-hot-toast";
-import Login from "./component/Login";
+
 import Footer from "./pages/Footer";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const prebookRef = useRef(null);
-  const videoRef = useRef(null);
+  const actionsRef = useRef(null);
   const sponsorRef = useRef(null);
 
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -32,7 +32,7 @@ const App = () => {
         aboutRef={aboutRef}
         contactRef={contactRef}
         prebookRef={prebookRef}
-        videoRef={videoRef}
+        actionsRef={actionsRef}
         sponsorRef={sponsorRef}
       />
 
@@ -40,7 +40,7 @@ const App = () => {
       <Prebook ref={prebookRef} onViewDetails={(event) => setSelectedEvent(event)} />
       {selectedEvent && <SingleEvent event={selectedEvent} onBack={() => setSelectedEvent(null)} />}
       <About ref={aboutRef} />
-      <Actions ref={videoRef} />
+      <Actions ref={actionsRef} />
       <Sponsors ref={sponsorRef}/>
       <Contact ref={contactRef} />
       <Footer/>
